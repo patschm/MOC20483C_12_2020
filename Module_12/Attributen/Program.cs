@@ -8,7 +8,7 @@ namespace Attributen
         static void Main(string[] args)
         {
             Person p = new Person();
-
+            //p.Introduce()
             SomeClass c1 = new SomeClass();
             FancyRuntime(c1);
         }

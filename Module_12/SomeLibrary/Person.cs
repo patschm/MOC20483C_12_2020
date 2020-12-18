@@ -3,6 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace SomeLibrary
 {
+    /// <summary>
+    /// Dit stelt een persoon voor
+    /// </summary>
     [Obsolete("Person is obsolete. Use Persoon instead", false)]
     public class Person
     {
@@ -18,9 +21,18 @@ namespace SomeLibrary
                 }
             }
         }
+        /// <summary>
+        /// Set hier de naam neer
+        /// <code>
+        /// </code>
+        /// </summary>
         public string Name { get; set; }
 
-        public void Introduce()
+        /// <summary>
+        /// Introduceert
+        /// </summary>
+        /// <param name="i">Hoe vaak dan?</param>
+        public void Introduce(int i = 0)
         {
             Console.WriteLine($"Hallo. Ik ben {Name} and {Age} years old");
         }
